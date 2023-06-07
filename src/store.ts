@@ -19,7 +19,7 @@ export const store = createStore<State>((set) => ({
   boo: 123,
   foo: "abc",
   user: {
-    username: "Kamil Perczyński",
+    username: "John Deryll Foe",
     preferredLanguage: "en",
     permissions: ["payments:list"],
   },

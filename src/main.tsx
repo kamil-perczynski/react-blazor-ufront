@@ -1,8 +1,8 @@
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
-import "./index.css";
-import { store } from "./store.ts";
 import { DotnetHelper } from "./dotnet";
+import { store } from "./store";
+import "./index.css";
 
 Object.defineProperty(window, "store", { value: store });
 

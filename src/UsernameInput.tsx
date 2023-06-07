@@ -3,7 +3,6 @@ import { useStore } from "zustand";
 import { store } from "./store";
 import { shallow } from "zustand/shallow";
 import { Link } from "react-router-dom";
-import { Parcel } from "./Parcel";
 
 export const UsernameInput: React.FC = React.memo(() => {
   const [username, setUsername] = useStore(
@@ -20,7 +19,7 @@ export const UsernameInput: React.FC = React.memo(() => {
         size={40}
         style={{ padding: 15 }}
       />
-      
+
       <br />
       <br />
 

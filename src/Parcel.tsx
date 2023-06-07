@@ -1,5 +1,6 @@
 import React, { createRef, useEffect, useRef } from "react";
 import { Router } from "@remix-run/router";
+import type { MSBlazor } from "./dotnet";
 
 const loadedBlazors: string[] = [];
 
@@ -8,26 +9,6 @@ interface Props {
   url: string;
   router: Router;
   stylesheets: string[];
-}
-
-declare global {
-  interface MountResult {
-    dispose(): void;
-  }
-
-  interface MSBlazor {
-    start(opts: unknown): Promise<unknown>;
-    navigateTo(location: string, reload?: boolean, replace?: boolean): void;
-
-    rootComponents: {
-      add<T extends HTMLElement>(
-        el: T | null,
-        elName: string,
-        props: Record<string, unknown>
-      ): Promise<MountResult>;
-    };
-  }
-  const Blazor: MSBlazor;
 }
 
 const _Parcel: React.FC<Props> = (props) => {

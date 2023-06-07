@@ -20,7 +20,7 @@ export const Counter: React.FC = React.memo(() => {
         &nbsp; &nbsp;
         <button onClick={incrementBoo}>+</button>
       </div>
-
+      <br />
       <div>
         <Link to="/fetchdata">Go to FetchData</Link>
       </div>

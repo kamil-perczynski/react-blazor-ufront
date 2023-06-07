@@ -4,7 +4,7 @@ import { RouterProvider } from "react-router";
 import { Counter } from "./Counter";
 import { createBrowserRouter } from "react-router-dom";
 import { Parcel } from "./Parcel";
-import { DotnetHelper } from "./dotnet";
+import ReactSvg from "./assets/react.svg";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +33,11 @@ function App() {
   return (
     <div className="app">
       <div className="side-view">
+        <img src={ReactSvg} width={200} />
+
+        <br />
+        <br />
+
         <RouterProvider router={router} />
       </div>
 
